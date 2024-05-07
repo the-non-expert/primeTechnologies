@@ -1,6 +1,6 @@
 <script>
-  import Isp from "../../lib/images/ISP.svg";
-  import Am from "../../lib/images/AccountManagement.svg";
+  //   import Isp from "../../lib/images/ISP.svg";
+  //   import Am from "../../lib/images/AccountManagement.svg";
 </script>
 
 <div class="text-center flex justify-center">
