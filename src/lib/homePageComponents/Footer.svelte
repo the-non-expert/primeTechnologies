@@ -5,7 +5,7 @@
   import phone from "$lib/images/phoneIcon.svg";
   import email from "$lib/images/emailIcon.svg";
 
-  import instagramIcon from "$lib/images/Instasvg.svg";
+  import instagramIcon from "$lib/images/InstaSvg.svg";
   import whatsappIcon from "$lib/images/whatsappSvg.svg";
   import linkedInIcon from "$lib/images/linkedin.svg";
   import youtubeIcon from "$lib/images/youtubeIcon.svg";
