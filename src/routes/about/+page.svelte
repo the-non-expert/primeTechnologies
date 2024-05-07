@@ -62,7 +62,7 @@
     }
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 999px) {
     .aboutContainer {
       flex-direction: column;
     }

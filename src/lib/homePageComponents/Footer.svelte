@@ -5,9 +5,9 @@
   import phone from "$lib/images/phoneIcon.svg";
   import email from "$lib/images/emailIcon.svg";
 
-  import instagramIcon from "$lib/images/instagramIcon.svg";
-  import whatsappIcon from "$lib/images/whatsappIcon.svg";
-  import linkedInIcon from "$lib/images/linkedinIcon.svg";
+  import instagramIcon from "$lib/images/Instasvg.svg";
+  import whatsappIcon from "$lib/images/whatsappSvg.svg";
+  import linkedInIcon from "$lib/images/linkedin.svg";
   import youtubeIcon from "$lib/images/youtubeIcon.svg";
 
   let socialMediaDetails = [
@@ -29,24 +29,30 @@
       iconUrl: linkedInIcon,
       redirectLink: "",
     },
-    {
-      id: 4,
-      name: "Youtube",
-      iconUrl: youtubeIcon,
-      redirectLink: "",
-    },
+    // {
+    //   id: 4,
+    //   name: "Youtube",
+    //   iconUrl: youtubeIcon,
+    //   redirectLink: "",
+    // },
   ];
 </script>
 
-<div
-  class="w-[98%] bg-slate-100 text-black flex justify-evenly items-cente py-6 rounded-t-3xl mx-auto"
->
-  <div class="flex flex-col items-center">
-    <div class="flex gap-2 items-center">
+<div class="w-[98%] text-black py-6 rounded-t-3xl mx-auto">
+  <div class="flex justify-evenly footerContainer">
+    <div class="flex">
       <img src="" alt="PRIME TECHNOLOGIES" class="flex h-16" />
     </div>
 
-    <div class="flex mt-1 gap-4">
+    <div class="flex gap-10 footerOptions">
+      <p class="font-semibold">About</p>
+      <p class="font-semibold">Services</p>
+      <p class="font-semibold">Contact Us</p>
+      <p class="font-semibold">Feedback</p>
+      <p class="font-semibold">Management</p>
+    </div>
+
+    <div class="flex gap-4">
       {#each socialMediaDetails as item (item.id)}
         <!-- svelte-ignore missing-declaration -->
         <a href={item.redirectLink}>
@@ -56,67 +62,63 @@
     </div>
   </div>
 
-  <div class="flex gap-10">
-    <div>
-      <p class="font-semibold font-[Montserrat] mb-4 text-[#6f42c2]">Company</p>
-      <div class="flex flex-col gap-1 font-light font-sans">
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-        <a href="/about"
-          ><p class="hover:text-[#6f42c2] cursor-pointer">About</p></a
-        >
-        <a href="/training"
-          ><p class="hover:text-[#6f42c2] cursor-pointer">Services</p></a
-        >
-        <!-- <p class="hover:text-[#6f42c2] cursor-pointer">Community</p> -->
-      </div>
+  <div class="flex justify-evenly items-center copyrightContainer">
+    <div class="flex gap-4">
+      <p class="">© 2024 Prime Technology Inc.</p>
+      <p class="">Terms</p>
+      <p>Privacy</p>
     </div>
 
-    <div>
-      <p class="font-semibold font-[Montserrat] mb-4 text-[#6f42c2]">Support</p>
-      <div class="flex flex-col gap-1 font-light font-sans">
-        <p class="hover:text-[#6f42c2] cursor-pointer">Contact Us</p>
-        <p class="hover:text-[#6f42c2] cursor-pointer">Management</p>
+    <div class="flex gap-5 text-black">
+      <div class="flex items-center gap-2">
+        <img src={phone} alt="phoneIcon" class="w-4" />
+        <p class=" font-[lato]">+91 9338017665</p>
       </div>
-    </div>
-
-    <div>
-      <p class="font-semibold font-[Montserrat] mb-4 text-[#6f42c2]">Links</p>
-      <div class="flex flex-col gap-1 font-light font-sans">
-        <p class="hover:text-[#6f42c2] cursor-pointer">Feedback</p>
+      <div class="flex items-center gap-2">
+        <img src={email} alt="phoneIcon" class="w-4" />
+        <p class=" font-[lato]">sampleEmail@gmail.com</p>
       </div>
-    </div>
-  </div>
-  <div>
-    <p class="font-semibold font-[Montserrat] mb-4 text-[#6f42c2]">Contact</p>
-
-    <div class="flex items-center gap-2">
-      <img src={phone} alt="phoneIcon" class="w-4" />
-      <p class=" font-[lato]">+91 9338017665</p>
-    </div>
-    <div class="flex items-center gap-2">
-      <img src={email} alt="phoneIcon" class="w-4" />
-      <p class=" font-[lato]">sampleEmail@gmail.com</p>
     </div>
   </div>
 </div>
 
-<!-- Copyright Footer -->
-<div class="bg-slate-100 w-[98%] py-6 font-[Montserrat] rounded-b-3xl mx-auto">
-  <div class="w-full border-t solid border-black"></div>
-  <div class="text-[#6f42c2] flex justify-around items-center pt-6">
-    <p class="mx-auto">© Copyright by Prime Technologies Inc.</p>
+<style>
+  @media only screen and (max-width: 639px) {
+    .footerContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-    <!-- <div class="flex gap-6">
-      <a href="/privacypolicies"
-        ><p class="hover:text-red-400">Privacy Policies</p></a
-      >
-      <a href="/terms&conditions"
-        ><p class="hover:text-red-400">Terms & Conditions</p></a
-      >
-      <a href="/cancellation&refund"
-        ><p class="hover:text-red-400">Cancellation & Refund</p></a
-      >
-    </div> -->
-  </div>
-</div>
+    .footerOptions {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 15px;
+    }
+
+    .copyrightContainer {
+      flex-direction: column-reverse;
+      margin-top: 50px;
+    }
+  }
+  @media only screen and (max-width: 999px) {
+    .footerContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footerOptions {
+      /* gap: 55px; */
+      margin-bottom: 15px;
+    }
+
+    .copyrightContainer {
+      flex-direction: column-reverse;
+      margin-top: 50px;
+    }
+  }
+</style>
