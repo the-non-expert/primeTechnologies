@@ -8,7 +8,8 @@
   import instagramIcon from "$lib/images/InstagramSvg.svg";
   import whatsappIcon from "$lib/images/whatsappSvg.svg";
   import linkedInIcon from "$lib/images/linkedin.svg";
-  import youtubeIcon from "$lib/images/youtubeIcon.svg";
+
+  import Logo from "../images/PrimeLogo.png";
 
   let socialMediaDetails = [
     {
@@ -39,9 +40,9 @@
 </script>
 
 <div class="w-[98%] text-black py-6 rounded-t-3xl mx-auto">
-  <div class="flex justify-evenly footerContainer">
+  <div class="flex justify-evenly items-center footerContainer mb-6">
     <div class="flex">
-      <img src="" alt="PRIME TECHNOLOGIES" class="flex h-16" />
+      <img src={Logo} alt="PRIME TECHNOLOGIES" class="flex h-28" />
     </div>
 
     <div class="flex gap-10 footerOptions">

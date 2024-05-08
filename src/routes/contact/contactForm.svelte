@@ -37,7 +37,9 @@
   // };
 </script>
 
-<div class="p-10 w-1/2 flex flex-col gap-8 bg-[#6f42c2] rounded-xl">
+<div
+  class="p-10 w-1/2 flex flex-col gap-8 bg-[#6f42c2] rounded-xl contactFormContainer"
+>
   <blockquote class="text-2xl font-semibold italic text-center text-white">
     The
     <span
@@ -92,3 +94,11 @@
     >
   </form>
 </div>
+
+<style>
+  @media only screen and (max-width: 850px) {
+    .contactFormContainer {
+      width: 90%;
+    }
+  }
+</style>

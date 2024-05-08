@@ -34,7 +34,9 @@
   ];
 </script>
 
-<div class="p-10 w-1/2 flex flex-col gap-4 bg-slate-200 rounded-xl">
+<div
+  class="p-10 w-1/2 flex flex-col gap-4 bg-slate-200 rounded-xl getInTouchContainer"
+>
   <p class="font-semibold text-[#6f42c2]">Get in Touch</p>
   <p>
     We love to hear from you. Our friendly team is always here to contact with
@@ -65,3 +67,11 @@
     {/each}
   </div>
 </div>
+
+<style>
+  @media only screen and (max-width: 850px) {
+    .getInTouchContainer {
+      width: 90%;
+    }
+  }
+</style>

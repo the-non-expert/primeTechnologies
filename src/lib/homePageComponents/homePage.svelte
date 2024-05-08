@@ -10,9 +10,9 @@
   import clients from "../images/testimonialImage.jpeg";
 </script>
 
-<div class="flex justify-center gap-24 mt-10 responsive">
+<div class="flex justify-center gap-24 mt-10 homeMainContainer">
   <div class="mb-4">
-    <p class="wCustom font-lato">
+    <p class="wCustom">
       Making the right IT choices can be difficult. That's wherewe come in.
       Prime Technologies has the expertise and skill-set necessary to help you
       make IT choices that are practical, efficient & reliable when it matters
@@ -29,7 +29,7 @@
   </div>
 </div>
 
-<div class="flex justify-center gap-24 mt-24 responsive">
+<div class="flex justify-center gap-24 mt-24 homeSupportContainer">
   <div>
     <p class="text-3xl font-semibold">
       GET THE RESULTS YOU'VE <br /> BEEN LOOKING FOR
@@ -56,7 +56,7 @@
   >
     WE CAN <span class="text-[#6F42C1]">HELP</span> WITH
   </p>
-  <div class="flex gap-10 justify-center mt-8">
+  <div class="flex gap-10 justify-center mt-8 helpWithContainer">
     <p class="px-4 py-2 bg-slate-200 rounded-xl shadow-md">
       Internet Service Provider
     </p>
@@ -89,7 +89,7 @@
     TRUSTED BY <span class="text-[#6F42C1]">TOP</span> COMPANIES
   </p>
 
-  <div class="flex gap-36 justify-center mt-8">
+  <div class="flex gap-36 justify-center mt-8 companiesList">
     <img src={azure} alt="azurelogo" class="w-36" />
     <img src={cisco} alt="azurelogo" class="w-24" />
     <img src={docker} alt="azurelogo" class="w-24" />
@@ -100,9 +100,9 @@
 
 <!-- testimonial section -->
 
-<div class="mt-20 mb-20 flex justify-center gap-20">
-  <img src={clients} alt="clients" class="w-4/12 h-full" />
-  <div class="w-4/12">
+<div class="mt-20 mb-20 flex justify-center gap-20 testmonialSection">
+  <img src={clients} alt="clients" class="w-4/12 h-full testmonialHomeImage" />
+  <div class="w-4/12 testmonialHomeText">
     <p class="text-2xl font-semibold">
       WHAT OUR <span class="text-[#6F42C1]">CLIENTS</span><br /> HAVE TO SAY
     </p>
@@ -126,26 +126,51 @@
     max-width: 25vw;
   }
 
-  @media only screen and (max-width: 639px) {
-    .flex {
-      display: block; /* Change to block layout for smaller screens */
-      justify-content: center; /* Maintain centering */
-      gap: 0; /* Remove gap for smaller screens */
-      margin: 0 auto; /* Center the entire component */
-    }
-
+  @media only screen and (max-width: 850px) {
     .wCustom {
       max-width: 100vw;
       text-align: center;
       padding: 20px;
     }
 
-    .responsive {
+    .homeMainContainer {
+      flex-direction: column-reverse;
+      align-items: center;
       text-align: center;
+    }
+
+    .homeSupportContainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1px;
     }
 
     .homeHeading {
       font-size: 1.5rem; /* Adjust font size for extra small screens */
+    }
+
+    .helpWithContainer {
+      flex-wrap: wrap;
+    }
+
+    .testmonialSection {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .testmonialHomeImage {
+      width: 60%;
+    }
+
+    .testmonialHomeText {
+      width: 80%;
+    }
+
+    .companiesList {
+      width: 80%;
+      flex-wrap: wrap;
     }
   }
 </style>
