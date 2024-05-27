@@ -1,3 +1,8 @@
+# chechout the website hosted on netlify
+
+Please go here: https://main--primetechnologies.netlify.app/
+It's completely responsive. Please contact if any questions.
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
