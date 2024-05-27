@@ -1,4 +1,4 @@
-# chechout the website hosted on netlify
+# checkout the website hosted on netlify
 
 Please go here: https://main--primetechnologies.netlify.app/
 It's completely responsive. Please contact if any questions.
